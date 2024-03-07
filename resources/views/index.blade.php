@@ -8,7 +8,7 @@
         <button @click="open = !open" class="bg-blue-400 rounded-md p-2 text-white">Toggle</button>
 
         <div x-show="open">
-            Olá, Alpine.js!
+            Olá, Alpine.js! :D
         </div>
     </div>
 
