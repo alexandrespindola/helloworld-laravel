@@ -19,12 +19,6 @@ console_command = 'php /var/www/html/artisan tinker'
   LOG_STDERR_FORMATTER = 'Monolog\Formatter\JsonFormatter'
   SESSION_DRIVER = 'cookie'
   SESSION_SECURE_COOKIE = 'true'
-  DB_CONNECTION='pgsql'
-  DB_HOST='foil-doxle-8949.7tc.aws-eu-central-1.cockroachlabs.cloud'
-  DB_PORT='26257'
-  DB_DATABASE='defaultdb'
-  DB_USERNAME='alexandre'
-  DB_PASSWORD='k8Zo6sftYDs8GvWFuL2ALg'
 
 [http_service]
   internal_port = 8080
