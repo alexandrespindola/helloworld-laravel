@@ -15,10 +15,13 @@
 
 </head>
 
-<body>
-
+<body class="flex flex-col" style="height: 100vh">
     @include('layouts._partials.menu')
-    @yield('content')
+
+    <main class="flex-1">
+        @yield('content')
+    </main>
+    @include('layouts._partials.footer')
 </body>
 
 </html>
