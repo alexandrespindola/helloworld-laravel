@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title')</title>
 
-    <!-- Scripts -->
+    <!-- Scripts CSS, SCSS, JS -->
     @vite(['resources/css/app.css', 'resources/scss/app.scss', 'resources/js/app.js'])
 
     <!-- Alpine.js -->
@@ -16,6 +16,8 @@
 </head>
 
 <body>
+
+    @include('layouts._partials.menu')
     @yield('content')
 </body>
 
