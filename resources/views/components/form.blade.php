@@ -16,6 +16,11 @@
                             class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                             id="description" type="text" name="title" value="{{ $formTitleValue }}">
                     </div>
+                    <div>
+                        @error('title')
+                            @include('components.error')
+                        @enderror
+                    </div>
 
                     {{-- Description --}}
                     <div class="flex flex-row items-center gap-3">
@@ -26,6 +31,11 @@
                         <input
                             class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                             id="description" type="text" name="description" value="{{ $formDescriptionValue }}">
+                    </div>
+                    <div>
+                        @error('description')
+                            @include('components.error')
+                        @enderror
                     </div>
                 </div>
             </div>

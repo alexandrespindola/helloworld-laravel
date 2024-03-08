@@ -35,6 +35,11 @@
                                 id="description" type="text" name="title"
                                 value="{{ old('title', $note->title ?? '') }}">
                         </div>
+                        <div>
+                            @error('title')
+                                @include('components.error')
+                            @enderror
+                        </div>
 
                         <div class="flex flex-row items-center gap-3">
                             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
@@ -45,6 +50,11 @@
                                 class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                                 id="description" type="text" name="description"
                                 value="{{ old('description', $note->description ?? '') }}">
+                        </div>
+                        <div>
+                            @error('description')
+                                @include('components.error')
+                            @enderror
                         </div>
                     </div>
                 </div>

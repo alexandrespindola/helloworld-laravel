@@ -13,10 +13,14 @@
     <!-- Alpine.js -->
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
+    <!-- Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 </head>
 
 <body class="flex flex-col" style="height: 100vh">
     @include('layouts._partials.menu')
+    @include('layouts._partials.messages')
 
     <main class="flex-1">
         @yield('content')
