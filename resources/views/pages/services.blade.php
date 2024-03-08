@@ -4,7 +4,7 @@
 
 @section('content')
     <h1 class="bg-yellow-400 text-blue-700 text-4xl">Services</h1>
-    <div class="flex flex-row flex-wrap">
+    <div class="flex flex-col lg:flex-row flex-wrap p-5">
         @component('components.card')
             @slot('title', 'Django')
             @slot('imageName', 'tech-icon-django')
