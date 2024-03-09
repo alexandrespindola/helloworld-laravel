@@ -17,6 +17,9 @@
                 <a href="{{ route('note.index') }}" class="text-white hover:text-blue-300">Notes</a>
             </li>
             <li>
+                <a href="{{ route('product.index') }}" class="text-white hover:text-blue-300">Product</a>
+            </li>
+            <li>
                 <a href="{{ route('contact') }}" class="text-white hover:text-blue-300">Contact</a>
             </li>
         </ul>
