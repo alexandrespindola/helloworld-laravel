@@ -15,5 +15,3 @@ Route::get('/create', [UserController::class, 'create'])->name('user.create');
 Route::resource('note', NoteController::class);
 
 Route::get('/product', [ProductController::class, 'index'])->name('product.index');
-
-

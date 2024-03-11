@@ -12,12 +12,6 @@ class UserController extends Controller
     public function index()
     {
         $users = User::all();
-
-        // $users = User::where('age', '>=', 30)->limit(1)->orderBy('age', 'desc')->get();
-
-        // $age = 30;
-        // $users = DB::select("SELECT * FROM users WHERE age= ?", [$age]);
-
         return view('pages.users', compact('users'));
     }
 
@@ -81,4 +75,6 @@ class UserController extends Controller
 
         return redirect()->route('users');
     }
+
+
 }
