@@ -5,10 +5,10 @@
 {{-- use "forelse" --}}
 @section('content')
     <h1 class="bg-yellow-400 text-blue-700 text-4xl">Users</h1>
-    @forelse ($users as $user)
-        <div class="w-full">
-            <div class="container mx-auto py-4 text-center">
-                <div class="bg-white rounded-lg shadow-md p-6 max-w-sm mx-auto">
+    <div class="w-full">
+        <div class="container mx-auto text-center flex flex-row flex-wrap justify-center gap-3 flex-1 self-center py-10 items-start">
+            @forelse ($users as $user)
+                <div class="bg-white rounded-lg shadow-md p-10 mx-auto">
                     <ul class="list-none">
                         <li class="flex items-center mb-4">
                             <span class="text-blue-700 font-bold mr-2">User name:</span>
@@ -38,16 +38,15 @@
                                 <span>{{ $role->pivot->added_by }}</span>
                             </li>
                         @endforeach
-
                     </ul>
                 </div>
-            </div>
+            @empty
+                <div class="w-full">
+                    <div class="container mx-auto py-4 text-center">
+                        <p class="text-red-500 text-2xl">No users found</p>
+                    </div>
+                </div>
+            @endforelse
         </div>
-    @empty
-        <div class="w-full">
-            <div class="container mx-auto py-4 text-center">
-                <p class="text-red-500 text-2xl">No users found</p>
-            </div>
-        </div>
-    @endforelse
+    </div>
 @endsection

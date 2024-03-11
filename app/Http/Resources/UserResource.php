@@ -13,7 +13,8 @@ class UserResource extends JsonResource
             'name' => $this->name,
             'email' => $this->email,
             // 'phone' => '('.$this->phone->prefix.') '.$this->phone->phone_number
-            'phones' => $this->phones->pluck('phone_number')
+            'phones' => $this->phones->pluck('phone_number'),
+            'roles' => $this->roles->pluck('name'),
         ];
     }
 }
