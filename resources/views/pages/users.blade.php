@@ -28,6 +28,17 @@
                                 <span>({{ $phone->prefix }}) {{ $phone->phone_number }}</span>
                             </li>
                         @endforeach
+                        @foreach ($user->roles as $role)
+                            <li class="flex items-center">
+                                <span class="text-blue-700 font-bold mr-2">Role:</span>
+                                <span>{{ $role->name }}</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="text-blue-700 font-bold mr-2">Added by:</span>
+                                <span>{{ $role->pivot->added_by }}</span>
+                            </li>
+                        @endforeach
+
                     </ul>
                 </div>
             </div>
