@@ -10,10 +10,22 @@ class PhoneSeeder extends Seeder
 {
     public function run(): void
     {
+        // Phone::create([
+        //     'prefix' => 34,
+        //     'phone_number' => 1234567890,
+        //     'user_id' => 1,
+        // ]);
+
         Phone::create([
             'prefix' => 34,
-            'phone_number' => 1234567890,
-            'user_id' => 1,
+            'phone_number' => 456789123,
+            'user_id' => 2,
+        ]);
+
+        Phone::create([
+            'prefix' => 34,
+            'phone_number' => 789456123,
+            'user_id' => 3,
         ]);
     }
 }
