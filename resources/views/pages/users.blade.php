@@ -22,10 +22,12 @@
                             <span class="text-blue-700 font-bold mr-2">E-mail:</span>
                             <span>{{ $user->email }}</span>
                         </li>
-                        <li class="flex items-center">
-                            <span class="text-blue-700 font-bold mr-2">Phone:</span>
-                            <span>({{ $user->phone->prefix }}) {{ $user->phone->phone_number }}</span>
-                        </li>
+                        @foreach ($user->phones as $phone)
+                            <li class="flex items-center">
+                                <span class="text-blue-700 font-bold mr-2">Phone:</span>
+                                <span>({{ $phone->prefix }}) {{ $phone->phone_number }}</span>
+                            </li>
+                        @endforeach
                     </ul>
                 </div>
             </div>

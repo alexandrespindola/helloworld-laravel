@@ -16,16 +16,28 @@ class PhoneSeeder extends Seeder
         //     'user_id' => 1,
         // ]);
 
+        // Phone::create([
+        //     'prefix' => 34,
+        //     'phone_number' => 456789123,
+        //     'user_id' => 2,
+        // ]);
+
+        // Phone::create([
+        //     'prefix' => 34,
+        //     'phone_number' => 789456123,
+        //     'user_id' => 3,
+        // ]);
+
         Phone::create([
-            'prefix' => 34,
-            'phone_number' => 456789123,
-            'user_id' => 2,
+            'prefix' => 33,
+            'phone_number' => 77777777,
+            'user_id' => 1,
         ]);
 
         Phone::create([
-            'prefix' => 34,
-            'phone_number' => 789456123,
-            'user_id' => 3,
+            'prefix' => 39,
+            'phone_number' => 8888888,
+            'user_id' => 1,
         ]);
     }
 }
